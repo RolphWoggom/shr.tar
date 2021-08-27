@@ -1,0 +1,33 @@
+SelectMission("sr4");
+	//The TIME TRIAL
+	//Script set up for multiple laps
+
+	SetMissionResetPlayerInCar("sr4_carstart");
+	SetDynaLoadData("l5z4.p3d;l5r3.p3d;l5r4.p3d;");
+	PlacePlayerCar("current", "sr4_carstart");
+
+	SetMissionStartCameraName( "race4camShape" );
+	SetMissionStartMulticontName( "race4cam" );
+	SetAnimatedCameraName( "race4camShape" );
+	SetAnimCamMulticontName( "race4cam" );
+
+	AddStage(final);
+		StartCountdown();
+		SetStageMessageIndex(225);
+		SetMaxTraffic(0); 
+		SetStageTime(140);
+		RESET_TO_HERE();
+		AddObjective( "race" );
+			AddCollectible("sr4_waypoint1","triggersphere_000");
+			AddCollectible("sr4_waypoint2","triggersphere_000");
+			AddCollectible("sr4_waypoint3","triggersphere_000");
+			AddCollectible("sr4_waypoint4","triggersphere_000");
+			AddCollectible("sr4_waypoint5","triggersphere_000");
+			AddCollectible("sr4_waypoint6","triggersphere_000");
+			AddCollectible("sr4_waypoint7","triggersphere_000");
+		CloseObjective();
+		AddCondition("timeout");
+		CloseCondition();
+	CloseStage();
+
+CloseMission();

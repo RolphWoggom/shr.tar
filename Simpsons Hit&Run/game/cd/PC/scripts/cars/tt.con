@@ -1,0 +1,23 @@
+// cuda.con
+
+SetMass(1000.0);
+SetGasScale(4.0);
+SetSlipGasScale(5.0);
+SetBrakeScale(8.0);
+SetTopSpeedKmh(220.0);
+SetMaxWheelTurnAngle(35.0);
+SetHighSpeedSteeringDrop(0.0);
+SetTireGrip(4.0);
+SetNormalSteering(110.0);
+SetSlipSteering(35.0);
+SetEBrakeEffect(0.5);
+
+
+SetCMOffsetX(0.0);
+SetCMOffsetY(0.0);
+SetCMOffsetZ(0.0);
+
+
+SetSuspensionLimit(0.4);
+SetSpringK(0.5);
+SetDamperC(0.2);
