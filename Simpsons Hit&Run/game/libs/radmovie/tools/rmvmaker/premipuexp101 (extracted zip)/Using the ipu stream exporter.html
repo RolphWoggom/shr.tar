@@ -1,0 +1,78 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb] (Win98; I) [Netscape]">
+<style type="text/css">
+h1 {font-weight:bold; font-size:16pt; font-family: Verdana, Arial, sans-serif; text-align:center; color: #336699}
+h2 {font-weight:bold; font-size:14pt; font-family: Verdana, Arial, sans-serif; color: #336699}
+h3 {font-weight:bold; font-size:10pt; font-family: Verdana, Arial, sans-serif; color: #336699}
+body {font-size:10pt; font-family: Verdana, Arial, sans-serif;}
+.small {font-size:8pt;}
+.big {font-size:12pt;}
+</style>
+</head>
+<body>
+
+<h1>
+Using the PlayStation2 IPU Stream Exporter Plug-in for Adobe Premiere for
+Windows</h1>
+
+<center><b>Version 1.0</b>
+<br>Mike Dean, Sony Computer Entertainment Europe
+<br>10th February 2000</center>
+
+<p><br>
+<h2>
+Installing</h2>
+To install the exporter plug-in, place the file ‘CMPM-PlayStation2 IPU
+Stream.prm’ into the appropriate plug-ins directory used by Adobe Premiere
+(such as 'C:\Program Files\Adobe\Premiere 5.1\Plug-ins').
+<h2>
+
+<hr WIDTH="100%">Using</h2>
+To invoke the exporter plug-in, select the File/Export/Movie item from
+the menu bar (the timeline should be the active window for the option to
+be available). In the file requestor which consequently opens, click on
+the 'Settings...' button.
+<p>In the 'General Settings' menu of the dialog box which then opens is
+a 'PlayStation2 IPU Stream' option which should be selected.
+<p>Select the 'work area' required, and ensure that the 'Open When Finished'
+checkbox is unticked.
+<p>When the General Settings dialog has been dismissed and a filename for
+the exported stream has been specified, a window will appear requesting
+details of compression settings. In the current version of the exporter,
+the only option available is a setting for the maximum size, in bytes,
+of compressed frame images.
+<h3>
+Previewing</h3>
+The files output by this exporter conform to the '.ipu' file format, and
+can be previewed using the 'ezmovie' application featured in the sample
+code of the development software.
+<p>
+<hr WIDTH="100%">
+<h2>
+Support</h2>
+Please email <a href="mailto:ps2_support@scee.net">ps2_support@scee.net</a>
+to report bugs in the exporter, documentation errors, or to request additional
+functionality.
+<h3>
+Known Bugs</h3>
+
+<ul>
+<li>
+Having clicked 'Save' in the file requestor, aborting the export (even
+before it has begun) will not erase the incomplete file.</li>
+
+<li>
+While not a bug, it is acknowledged that the performance of the exporter
+could be better..</li>
+</ul>
+
+<h3>
+Future Plans</h3>
+Aside from performance issues, no major improvements are currently planned
+for this exporter. If you can suggest any features which could be useful
+additions, please email the support address above.
+</body>
+</html>
